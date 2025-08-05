@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="https://1games.io/game/wave-dash/25051502/theme/game.css">
+	<link rel="stylesheet" href="game.css">
 	<title>Wave Dash</title>
 	<meta name="description" content="Ride the waves and dodge dangerous obstacles in Wave Dash! Perform epic tricks and dash the farthest as you race to become the ultimate wave master.">
 	<style>
@@ -22,9 +22,9 @@
 		}
 	</style> 
 	<script>
-		var buildUrl = "Build";
+		var buildUrl = "";
 		var versionFolder = "25051502/";
-		buildUrl = "https://play.1games.io/game/wave-dash/" + versionFolder + buildUrl;
+		buildUrl = "https://martinmmcyt.github.io/wave-dash/" + versionFolder + buildUrl;
 		var loaderUrl = buildUrl + "/wave-dash-v25051502.loader.js";
 
 		var config = {
@@ -56,8 +56,8 @@
 
 		config.gdHost = isHostOnGD();
 		if (config.gdHost) {
-			config.enableMoreGame = "no";
-			config.enablePromotion = false;
+			config.enableMoreGame = "yes";
+			config.enablePromotion = true;
 			config.eventLog = false;
 			let pathSegments = window.location.pathname.split('/');
 			config.gdGameId = pathSegments[1];
